@@ -1,0 +1,40 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  -webkit-app-region: drag;
+  .content {
+    flex-shrink: 1;
+    width: 100%;
+    background: white;
+    position: relative;
+    background: linear-gradient(to right, rgb(52, 56, 59), rgb(29, 29, 29));
+    .form {
+      color: rgb(253, 253, 253);
+      left: 50%;
+      top: 30%;
+      position: absolute;
+      transform: translate(-50%, 0);
+      h1 {
+        text-align: center;
+        letter-spacing: 0.3em;
+      }
+      .form-item {
+        margin-top: 20px;
+        .input {
+          margin: 7px 0;
+          width: 100%;
+          @include input();
+        }
+        .button {
+          margin: 7px 0;       
+          @include button();
+        }
+      }
+    }
+  }
+  .bg {
+    width: 100%;
+    flex-shrink: 2;
+  }
+}
